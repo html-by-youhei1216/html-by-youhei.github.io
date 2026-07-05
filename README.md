@@ -1,107 +1,65 @@
-# HTML Playground
+# GitHub アップロード用フォルダ
 
-**HTML Playground** は、HTMLを楽しく学べる日本語対応の **Web学習アプリ** です。ブラウザを開くだけで、Swift Playgrounds のようなステップ形式の学習体験ができます。
+このフォルダの**中身すべて**を GitHub リポジトリのルートにアップロードしてください。
 
-![Platform](https://img.shields.io/badge/platform-Web-blue)
-![Language](https://img.shields.io/badge/UI-日本語-red)
-![License](https://img.shields.io/badge/license-MIT-green)
+## フォルダ構成
 
-## 特徴
+```
+upload/                          ← このフォルダの中身を GitHub へ
+├── README.md                    ← この説明書
+├── .gitignore
+├── .github/
+│   └── workflows/
+│       └── deploy-pages.yml     ← 自動デプロイ設定
+└── docs/                        ← Webサイト本体（GitHub Pages）
+    ├── .nojekyll                ← 必須（Jekyll 無効化）
+    ├── index.html               ← トップページ
+    ├── app.html                 ← HTML Playground アプリ ★
+    ├── css/
+    ├── js/
+    ├── data/
+    └── images/
+```
 
-- **ブラウザですぐ使える** — インストール不要、PC・タブレット・スマホ対応
-- **完全日本語UI** — レッスン、ヘルプ、エラーメッセージすべて日本語
-- **12章の内蔵レッスン** — 解説・練習・クイズ付き
-- **リアルタイムプレビュー** — 入力と同時に更新（PC / タブレット / スマホ表示）
-- **HTMLエディタ** — シンタックスハイライト、行番号、タグ補完、コード整形
-- **練習問題** — 自動採点、ヒント機能（初級・中級・上級）
-- **進捗保存** — ブラウザの localStorage に自動保存
+## アップロード手順
 
-## 使い方
+### 方法A: GitHub ウェブサイト（ドラッグ＆ドロップ）
 
-### Webアプリ（メイン）
+1. [GitHub](https://github.com/) で新しいリポジトリを作成
+2. **「uploading an existing file」** をクリック
+3. **`upload` フォルダの中身**（`.github`、`docs`、`.gitignore`）をドラッグ＆ドロップ  
+   ※ `upload` フォルダ自体ではなく、**中身**をアップロード
+4. **Commit changes**
 
-1. [Netlify](https://app.netlify.com/) にデプロイ、またはローカルで `public` フォルダを配信
-2. **`/app.html`** を開く
-3. サイドバーからレッスン・エディタ・練習問題を選んで学習開始
-
-ローカル確認:
+### 方法B: ターミナル（git）
 
 ```bash
-cd public
-python3 -m http.server 8080
-# http://localhost:8080/app.html を開く
+cd upload
+git init
+git add .
+git commit -m "Initial commit: HTML Playground"
+git branch -M main
+git remote add origin https://github.com/ユーザー名/リポジトリ名.git
+git push -u origin main
 ```
 
-### macOS アプリ（オプション）
+## GitHub Pages の設定
 
-`HTMLPlayground/` フォルダに Xcode プロジェクトも含まれています。
+1. リポジトリ → **Settings** → **Pages**
+2. **Source:** **GitHub Actions** を選択
+3. **Actions** タブで「Deploy GitHub Pages」が成功するのを待つ（1〜3分）
 
-```bash
-open HTMLPlayground/HTMLPlayground.xcodeproj
-```
+## 公開 URL
 
-## プロジェクト構成
+リポジトリ名が `html-playground` の場合:
 
-```
-html学習/
-├── netlify.toml              # Netlify 設定
-├── public/                   # 公開ディレクトリ
-│   ├── index.html            # ランディングページ
-│   ├── app.html              # Webアプリ本体 ★
-│   ├── css/
-│   │   ├── style.css         # ランディング用
-│   │   └── app.css           # アプリ用
-│   ├── js/
-│   │   ├── main.js           # ランディング用
-│   │   └── app/              # Webアプリ（ES Modules）
-│   │       ├── main.js       # ルーター
-│   │       ├── views.js      # 各画面
-│   │       ├── storage.js    # 進捗・プロジェクト保存
-│   │       ├── utils.js      # HTML整形・採点
-│   │       └── editor.js     # エディタ・プレビュー
-│   └── data/                 # レッスンJSON（12章）
-│       ├── lessons.json
-│       ├── exercises.json
-│       └── snippets.json
-└── HTMLPlayground/           # macOS ネイティブ版（オプション）
-```
+| ページ | URL |
+|--------|-----|
+| トップ | `https://ユーザー名.github.io/html-playground/` |
+| アプリ | `https://ユーザー名.github.io/html-playground/app.html` |
 
-## Netlify で公開
+## 注意
 
-1. GitHub に push
-2. Netlify → **Import an existing project**
-3. 設定（`netlify.toml` で自動検出）:
-   - **Publish directory:** `public`
-4. **Deploy**
-
-公開 URL:
-- `/` — ランディングページ
-- `/app.html` または `/app` — **HTML Playground Webアプリ**
-
-## 内蔵レッスン（全12章）
-
-| 章 | タイトル | 難易度 |
-|----|---------|--------|
-| 1 | HTMLとは | 初級 |
-| 2 | HTML文書の基本構造 | 初級 |
-| 3 | 見出しタグ | 初級 |
-| 4 | 段落タグ | 初級 |
-| 5 | リンク | 初級 |
-| 6 | 画像 | 初級 |
-| 7 | リスト | 中級 |
-| 8 | 表 | 中級 |
-| 9 | フォーム | 中級 |
-| 10 | セマンティックHTML | 中級 |
-| 11 | アクセシビリティ | 上級 |
-| 12 | レスポンシブデザイン入門 | 上級 |
-
-## 技術仕様
-
-- **HTML / CSS / JavaScript**（Vanilla JS、ES Modules）
-- **localStorage** — 進捗・プロジェクト・設定の永続化
-- **iframe srcdoc** — リアルタイム HTML プレビュー
-- **Netlify** — 静的ホスティング
-
-## ライセンス
-
-MIT License
+- **`docs/.nojekyll`** は削除しないでください
+- リポジトリのルートに `docs/` フォルダがある構成にしてください
+- macOS アプリ（`HTMLPlayground/`）はこのフォルダに含まれていません（Web版のみ）

@@ -1,0 +1,380 @@
+[
+  {
+    "id": "ch01",
+    "chapter": 1,
+    "title": "HTMLとは",
+    "subtitle": "Webページの基本を知ろう",
+    "difficulty": "初級",
+    "content": "HTML（HyperText Markup Language）は、Webページを作るためのマークアップ言語です。\n\nブラウザはHTMLを読み取り、見出し、段落、リンク、画像などを画面に表示します。HTMLはプログラミング言語ではなく、文書の「構造」を記述するための言語です。\n\nタグと呼ばれる <> で囲まれた要素を使って、テキストの意味や役割を伝えます。例えば <h1> は大見出し、<p> は段落を表します。",
+    "codeExample": "<!DOCTYPE html>\n<html lang=\"ja\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>はじめてのHTML</title>\n</head>\n<body>\n  <h1>こんにちは、HTML！</h1>\n  <p>これが私の最初のWebページです。</p>\n</body>\n</html>",
+    "practicePrompt": "基本的なHTML文書を作成してください。<html>、<head>、<body>、<h1>、<p> を含めましょう。",
+    "practiceStarterCode": "<!DOCTYPE html>\n<html lang=\"ja\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>練習</title>\n</head>\n<body>\n  \n</body>\n</html>",
+    "practiceSolution": "<!DOCTYPE html>\n<html lang=\"ja\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>練習</title>\n</head>\n<body>\n  <h1>HTMLへようこそ</h1>\n  <p>HTMLはWebページの基本です。</p>\n</body>\n</html>",
+    "hints": [
+      "<!DOCTYPE html> を文書の先頭に書きましょう。",
+      "<body> の中に <h1> と <p> を追加します。"
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "HTMLの正式名称は？",
+        "options": [
+          "HyperText Markup Language",
+          "High Tech Modern Language",
+          "Home Tool Markup Language",
+          "Hyper Transfer Mark Language"
+        ],
+        "correctIndex": 0,
+        "explanation": "HTMLは HyperText Markup Language の略称です。"
+      }
+    ],
+    "requiredLessonId": null,
+    "estimatedMinutes": 10
+  },
+  {
+    "id": "ch02",
+    "chapter": 2,
+    "title": "HTML文書の基本構造",
+    "subtitle": "DOCTYPE、head、bodyを理解しよう",
+    "difficulty": "初級",
+    "content": "HTML文書は決まった構造を持っています。\n\n1. <!DOCTYPE html> — 文書タイプの宣言\n2. <html lang=\"ja\"> — 文書全体を囲む\n3. <head> — メタ情報（タイトル、文字コードなど）\n4. <body> — 実際に表示される内容\n\n<head> 内には <meta charset=\"UTF-8\"> で文字コードを指定し、<title> でページタイトルを設定します。",
+    "codeExample": "<!DOCTYPE html>\n<html lang=\"ja\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>ページタイトル</title>\n</head>\n<body>\n  <p>表示される内容</p>\n</body>\n</html>",
+    "practicePrompt": "完全なHTML文書構造を作成し、<title> と <meta charset> を含めてください。",
+    "practiceStarterCode": "<!DOCTYPE html>\n<html lang=\"ja\">\n<head>\n  \n</head>\n<body>\n  <p>基本構造の練習</p>\n</body>\n</html>",
+    "practiceSolution": "<!DOCTYPE html>\n<html lang=\"ja\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>基本構造</title>\n</head>\n<body>\n  <p>基本構造の練習</p>\n</body>\n</html>",
+    "hints": [
+      "<head> 内に meta と title を追加します。"
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "表示される内容はどの要素に書きますか？",
+        "options": [
+          "<head>",
+          "<body>",
+          "<html>",
+          "<meta>"
+        ],
+        "correctIndex": 1,
+        "explanation": "表示内容は <body> 内に記述します。"
+      }
+    ],
+    "requiredLessonId": "ch01",
+    "estimatedMinutes": 12
+  },
+  {
+    "id": "ch03",
+    "chapter": 3,
+    "title": "見出しタグ",
+    "subtitle": "h1〜h6で文書構造を作ろう",
+    "difficulty": "初級",
+    "content": "見出しタグ <h1> から <h6> まであり、数字が小さいほど重要度が高くなります。\n\n<h1> はページに1つが理想です。見出しは文書の構造を示し、SEOやアクセシビリティにも重要です。\n\n見出しの階層を飛ばさないようにしましょう（h1の次にh3を使わない等）。",
+    "codeExample": "<h1>メインタイトル</h1>\n<h2>セクション見出し</h2>\n<h3>サブセクション</h3>\n<p>段落テキスト</p>",
+    "practicePrompt": "h1、h2、h3 の見出しと段落を含むHTMLを作成してください。",
+    "practiceStarterCode": "<body>\n  \n</body>",
+    "practiceSolution": "<body>\n  <h1>Web開発入門</h1>\n  <h2>HTMLの基礎</h2>\n  <h3>見出しタグ</h3>\n  <p>見出しで文書構造を作ります。</p>\n</body>",
+    "hints": [
+      "<h1> は1つだけ使いましょう。",
+      "見出しの後に <p> で説明を追加します。"
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "最も重要な見出しタグは？",
+        "options": [
+          "<h6>",
+          "<h3>",
+          "<h1>",
+          "<title>"
+        ],
+        "correctIndex": 2,
+        "explanation": "<h1> が最も重要な見出しです。"
+      }
+    ],
+    "requiredLessonId": "ch02",
+    "estimatedMinutes": 10
+  },
+  {
+    "id": "ch04",
+    "chapter": 4,
+    "title": "段落タグ",
+    "subtitle": "テキストを整理しよう",
+    "difficulty": "初級",
+    "content": "<p> タグは段落（パラグラフ）を表します。ブラウザは段落の前後に自動的に余白を追加します。\n\nテキストの改行には <br> を使いますが、段落の区切りには <p> を使いましょう。\n\n強調には <strong>（太字）、<em>（斜体）を使います。",
+    "codeExample": "<p>これは最初の段落です。</p>\n<p>これは<strong>強調</strong>されたテキストを含む段落です。</p>\n<p>改行が必要な場合は<br>を使います。</p>",
+    "practicePrompt": "2つ以上の段落と、strong で強調したテキストを含めてください。",
+    "practiceStarterCode": "<body>\n  <h1>段落の練習</h1>\n  \n</body>",
+    "practiceSolution": "<body>\n  <h1>段落の練習</h1>\n  <p>HTMLでは段落を<p>タグで囲みます。</p>\n  <p><strong>重要</strong>な部分を強調できます。</p>\n</body>",
+    "hints": [
+      "各段落を <p> で囲みます。",
+      "<strong> で強調したい部分を囲みます。"
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "段落を表すタグは？",
+        "options": [
+          "<div>",
+          "<span>",
+          "<p>",
+          "<br>"
+        ],
+        "correctIndex": 2,
+        "explanation": "<p> が段落タグです。"
+      }
+    ],
+    "requiredLessonId": "ch03",
+    "estimatedMinutes": 10
+  },
+  {
+    "id": "ch05",
+    "chapter": 5,
+    "title": "リンク",
+    "subtitle": "ページ間をつなごう",
+    "difficulty": "初級",
+    "content": "<a> タグでハイパーリンクを作成します。href 属性にリンク先のURLを指定します。\n\n同じページ内のリンクには id 属性と # を使います。\n\n外部リンクには target=\"_blank\" と rel=\"noopener\" を付けると安全です。",
+    "codeExample": "<a href=\"https://example.com\">外部サイトへ</a>\n<a href=\"#section2\">ページ内リンク</a>\n<a href=\"mailto:info@example.com\">メールを送る</a>",
+    "practicePrompt": "外部リンクとページ内リンクを含むHTMLを作成してください。",
+    "practiceStarterCode": "<body>\n  <h1>リンクの練習</h1>\n  \n</body>",
+    "practiceSolution": "<body>\n  <h1>リンクの練習</h1>\n  <a href=\"https://example.com\">Example サイト</a>\n  <p id=\"bottom\">ページ下部</p>\n  <a href=\"#bottom\">下部へジャンプ</a>\n</body>",
+    "hints": [
+      "<a href=\"URL\">テキスト</a> の形式です。"
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "リンク先を指定する属性は？",
+        "options": [
+          "src",
+          "href",
+          "link",
+          "url"
+        ],
+        "correctIndex": 1,
+        "explanation": "href 属性でリンク先を指定します。"
+      }
+    ],
+    "requiredLessonId": "ch04",
+    "estimatedMinutes": 12
+  },
+  {
+    "id": "ch06",
+    "chapter": 6,
+    "title": "画像",
+    "subtitle": "imgタグで画像を表示しよう",
+    "difficulty": "初級",
+    "content": "<img> タグで画像を表示します。src 属性に画像のパス、alt 属性に代替テキストを指定します。\n\nalt 属性はアクセシビリティに不可欠です。画像が表示できない場合やスクリーンリーダーが内容を読み上げる際に使われます。",
+    "codeExample": "<img src=\"photo.jpg\" alt=\"富士山の写真\">\n<img src=\"logo.png\" alt=\"サイトロゴ\" width=\"200\" height=\"100\">",
+    "practicePrompt": "alt 属性付きの img タグを追加してください。",
+    "practiceStarterCode": "<body>\n  <h1>画像の練習</h1>\n  \n</body>",
+    "practiceSolution": "<body>\n  <h1>画像の練習</h1>\n  <img src=\"sample.jpg\" alt=\"サンプル画像の説明\">\n</body>",
+    "hints": [
+      "img タグは閉じタグが不要です。",
+      "alt には画像の内容を説明するテキストを書きます。"
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "画像の代替テキストを指定する属性は？",
+        "options": [
+          "title",
+          "alt",
+          "text",
+          "description"
+        ],
+        "correctIndex": 1,
+        "explanation": "alt 属性で代替テキストを指定します。"
+      }
+    ],
+    "requiredLessonId": "ch05",
+    "estimatedMinutes": 10
+  },
+  {
+    "id": "ch07",
+    "chapter": 7,
+    "title": "リスト",
+    "subtitle": "ul、ol、liでリストを作ろう",
+    "difficulty": "中級",
+    "content": "順序なしリストは <ul>、順序付きリストは <ol> を使い、各項目は <li> で囲みます。\n\nネスト（入れ子）も可能で、サブリストを作れます。",
+    "codeExample": "<ul>\n  <li>りんご</li>\n  <li>バナナ</li>\n  <li>オレンジ</li>\n</ul>\n\n<ol>\n  <li>材料を準備</li>\n  <li>調理する</li>\n  <li>完成</li>\n</ol>",
+    "practicePrompt": "ul リストと ol リストの両方を作成してください。",
+    "practiceStarterCode": "<body>\n  <h1>リストの練習</h1>\n  \n</body>",
+    "practiceSolution": "<body>\n  <h1>リストの練習</h1>\n  <ul><li>項目A</li><li>項目B</li></ul>\n  <ol><li>手順1</li><li>手順2</li></ol>\n</body>",
+    "hints": [
+      "<ul> または <ol> の中に <li> を書きます。"
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "番号付きリストに使うタグは？",
+        "options": [
+          "<ul>",
+          "<ol>",
+          "<dl>",
+          "<list>"
+        ],
+        "correctIndex": 1,
+        "explanation": "<ol> が順序付きリストです。"
+      }
+    ],
+    "requiredLessonId": "ch06",
+    "estimatedMinutes": 12
+  },
+  {
+    "id": "ch08",
+    "chapter": 8,
+    "title": "表",
+    "subtitle": "tableでデータを整理しよう",
+    "difficulty": "中級",
+    "content": "表は <table> で始まり、行は <tr>、セルは <td>（データ）または <th>（見出し）で構成します。\n\n<thead>、<tbody>、<tfoot> で表の部分をグループ化できます。",
+    "codeExample": "<table>\n  <thead>\n    <tr><th>名前</th><th>年齢</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>太郎</td><td>20</td></tr>\n    <tr><td>花子</td><td>22</td></tr>\n  </tbody>\n</table>",
+    "practicePrompt": "2列3行以上の表を作成してください。th で見出しセルを使いましょう。",
+    "practiceStarterCode": "<body>\n  <h1>表の練習</h1>\n  \n</body>",
+    "practiceSolution": "<body>\n  <h1>表の練習</h1>\n  <table>\n    <tr><th>科目</th><th>点数</th></tr>\n    <tr><td>数学</td><td>90</td></tr>\n    <tr><td>英語</td><td>85</td></tr>\n  </table>\n</body>",
+    "hints": [
+      "<table> の中に <tr> を、<tr> の中に <td> や <th> を書きます。"
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "表の見出しセルに使うタグは？",
+        "options": [
+          "<td>",
+          "<th>",
+          "<tr>",
+          "<thead>"
+        ],
+        "correctIndex": 1,
+        "explanation": "<th> が見出しセルです。"
+      }
+    ],
+    "requiredLessonId": "ch07",
+    "estimatedMinutes": 15
+  },
+  {
+    "id": "ch09",
+    "chapter": 9,
+    "title": "フォーム",
+    "subtitle": "ユーザー入力を受け付けよう",
+    "difficulty": "中級",
+    "content": "<form> タグでフォームを作成します。input、textarea、select、button などで入力要素を配置します。\n\nlabel タグで入力欄にラベルを付けるとアクセシビリティが向上します。",
+    "codeExample": "<form action=\"/submit\" method=\"post\">\n  <label for=\"name\">名前:</label>\n  <input type=\"text\" id=\"name\" name=\"name\">\n  <label for=\"email\">メール:</label>\n  <input type=\"email\" id=\"email\" name=\"email\">\n  <button type=\"submit\">送信</button>\n</form>",
+    "practicePrompt": "テキスト入力と送信ボタンを含むフォームを作成してください。",
+    "practiceStarterCode": "<body>\n  <h1>フォームの練習</h1>\n  \n</body>",
+    "practiceSolution": "<body>\n  <h1>フォームの練習</h1>\n  <form>\n    <label for=\"name\">名前:</label>\n    <input type=\"text\" id=\"name\">\n    <button type=\"submit\">送信</button>\n  </form>\n</body>",
+    "hints": [
+      "<form> で全体を囲みます。",
+      "<input type=\"text\"> でテキスト入力を作ります。"
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "フォームを囲むタグは？",
+        "options": [
+          "<input>",
+          "<form>",
+          "<fieldset>",
+          "<div>"
+        ],
+        "correctIndex": 1,
+        "explanation": "<form> がフォーム要素です。"
+      }
+    ],
+    "requiredLessonId": "ch08",
+    "estimatedMinutes": 15
+  },
+  {
+    "id": "ch10",
+    "chapter": 10,
+    "title": "セマンティックHTML",
+    "subtitle": "意味のあるタグを使おう",
+    "difficulty": "中級",
+    "content": "セマンティックHTMLは、内容の「意味」を正しく伝えるタグを使うことです。\n\n<header> — ヘッダー\n<nav> — ナビゲーション\n<main> — メインコンテンツ\n<article> — 独立した記事\n<section> — セクション\n<footer> — フッター\n\n<div> の代わりに意味のあるタグを使うと、SEOやアクセシビリティが向上します。",
+    "codeExample": "<header><h1>サイト名</h1><nav><a href=\"/\">ホーム</a></nav></header>\n<main>\n  <article><h2>記事タイトル</h2><p>本文</p></article>\n</main>\n<footer><p>&copy; 2026</p></footer>",
+    "practicePrompt": "header、main、footer を使ったセマンティックなHTML構造を作成してください。",
+    "practiceStarterCode": "<body>\n  \n</body>",
+    "practiceSolution": "<body>\n  <header><h1>マイサイト</h1></header>\n  <main><p>メインコンテンツ</p></main>\n  <footer><p>フッター</p></footer>\n</body>",
+    "hints": [
+      "<header>、<main>、<footer> を使い分けます。"
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "メインコンテンツに使うタグは？",
+        "options": [
+          "<section>",
+          "<main>",
+          "<article>",
+          "<div>"
+        ],
+        "correctIndex": 1,
+        "explanation": "<main> がメインコンテンツ用です。"
+      }
+    ],
+    "requiredLessonId": "ch09",
+    "estimatedMinutes": 15
+  },
+  {
+    "id": "ch11",
+    "chapter": 11,
+    "title": "アクセシビリティ",
+    "subtitle": "すべての人に使いやすいWebを",
+    "difficulty": "上級",
+    "content": "Webアクセシビリティは、障害のある方も含めすべての人がWebを利用できるようにすることです。\n\n重要なポイント:\n• 画像に alt 属性を付ける\n• 見出しの階層を正しく使う\n• label と input を関連付ける\n• 十分なコントラスト比を確保する\n• lang 属性で言語を指定する\n• キーボード操作を可能にする",
+    "codeExample": "<html lang=\"ja\">\n<img src=\"chart.png\" alt=\"2026年売上グラフ: 1月100万、2月120万\">\n<label for=\"search\">検索:</label>\n<input type=\"search\" id=\"search\" aria-label=\"サイト内検索\">",
+    "practicePrompt": "lang 属性、alt 属性、label を含むアクセシブルなHTMLを作成してください。",
+    "practiceStarterCode": "<html>\n<body>\n  \n</body>\n</html>",
+    "practiceSolution": "<html lang=\"ja\">\n<body>\n  <img src=\"photo.jpg\" alt=\"説明テキスト\">\n  <label for=\"name\">名前:</label>\n  <input type=\"text\" id=\"name\">\n</body>\n</html>",
+    "hints": [
+      "<html lang=\"ja\"> を設定します。",
+      "すべての img に alt を付けます。"
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "スクリーンリーダー向けに画像の説明を提供する属性は？",
+        "options": [
+          "title",
+          "alt",
+          "aria-label",
+          "description"
+        ],
+        "correctIndex": 1,
+        "explanation": "alt 属性が画像の代替テキストです。"
+      }
+    ],
+    "requiredLessonId": "ch10",
+    "estimatedMinutes": 15
+  },
+  {
+    "id": "ch12",
+    "chapter": 12,
+    "title": "レスポンシブデザイン入門",
+    "subtitle": "あらゆる画面サイズに対応しよう",
+    "difficulty": "上級",
+    "content": "レスポンシブデザインは、PC、タブレット、スマホなど様々な画面サイズに対応するWebデザインです。\n\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> を head に追加することで、モバイルブラウザが適切にページを表示します。\n\nCSSのメディアクエリと組み合わせて、画面サイズに応じたレイアウト変更が可能です。",
+    "codeExample": "<head>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <style>\n    .container { max-width: 800px; margin: 0 auto; }\n    @media (max-width: 600px) {\n      .container { padding: 0 1rem; }\n    }\n  </style>\n</head>",
+    "practicePrompt": "viewport meta タグを含むレスポンシブ対応のHTML文書を作成してください。",
+    "practiceStarterCode": "<!DOCTYPE html>\n<html lang=\"ja\">\n<head>\n  <meta charset=\"UTF-8\">\n  \n  <title>レスポンシブ</title>\n</head>\n<body>\n  <p>レスポンシブデザイン</p>\n</body>\n</html>",
+    "practiceSolution": "<!DOCTYPE html>\n<html lang=\"ja\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>レスポンシブ</title>\n</head>\n<body>\n  <p>レスポンシブデザイン</p>\n</body>\n</html>",
+    "hints": [
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> を head に追加します。"
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "モバイル対応に必要なmetaタグは？",
+        "options": [
+          "charset",
+          "viewport",
+          "description",
+          "keywords"
+        ],
+        "correctIndex": 1,
+        "explanation": "viewport meta タグがモバイル表示に必要です。"
+      }
+    ],
+    "requiredLessonId": "ch11",
+    "estimatedMinutes": 15
+  }
+]

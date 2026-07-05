@@ -1,0 +1,65 @@
+[
+  {
+    "id": "sn01",
+    "title": "基本HTMLテンプレート",
+    "category": "基本",
+    "code": "<!DOCTYPE html>\n<html lang=\"ja\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>ページタイトル</title>\n</head>\n<body>\n  \n</body>\n</html>",
+    "description": "HTML文書の基本テンプレート"
+  },
+  {
+    "id": "sn02",
+    "title": "見出しと段落",
+    "category": "テキスト",
+    "code": "<h1>大見出し</h1>\n<h2>中見出し</h2>\n<p>段落テキスト</p>",
+    "description": "見出しと段落の基本セット"
+  },
+  {
+    "id": "sn03",
+    "title": "リンク",
+    "category": "リンク",
+    "code": "<a href=\"https://example.com\">リンクテキスト</a>",
+    "description": "外部リンクの基本形"
+  },
+  {
+    "id": "sn04",
+    "title": "画像",
+    "category": "メディア",
+    "code": "<img src=\"image.jpg\" alt=\"画像の説明\">",
+    "description": "alt属性付き画像タグ"
+  },
+  {
+    "id": "sn05",
+    "title": "順序なしリスト",
+    "category": "リスト",
+    "code": "<ul>\n  <li>項目1</li>\n  <li>項目2</li>\n</ul>",
+    "description": "箇条書きリスト"
+  },
+  {
+    "id": "sn06",
+    "title": "表",
+    "category": "表",
+    "code": "<table>\n  <tr><th>見出し1</th><th>見出し2</th></tr>\n  <tr><td>データ1</td><td>データ2</td></tr>\n</table>",
+    "description": "基本的な表"
+  },
+  {
+    "id": "sn07",
+    "title": "フォーム",
+    "category": "フォーム",
+    "code": "<form>\n  <label for=\"input\">ラベル:</label>\n  <input type=\"text\" id=\"input\">\n  <button type=\"submit\">送信</button>\n</form>",
+    "description": "基本的なフォーム"
+  },
+  {
+    "id": "sn08",
+    "title": "セマンティック構造",
+    "category": "セマンティック",
+    "code": "<header></header>\n<nav></nav>\n<main></main>\n<footer></footer>",
+    "description": "セマンティックHTMLの骨組み"
+  },
+  {
+    "id": "sn09",
+    "title": "viewport設定",
+    "category": "レスポンシブ",
+    "code": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+    "description": "モバイル対応のviewport設定"
+  }
+]

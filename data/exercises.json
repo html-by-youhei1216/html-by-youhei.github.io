@@ -1,0 +1,120 @@
+[
+  {
+    "id": "ex01",
+    "title": "自己紹介ページ",
+    "difficulty": "初級",
+    "description": "h1見出しと段落を使った自己紹介ページを作成してください。",
+    "starterCode": "<body>\n  \n</body>",
+    "solution": "<body>\n  <h1>自己紹介</h1>\n  <p>はじめまして、太郎です。</p>\n  <p>HTMLを勉強しています。</p>\n</body>",
+    "hints": [
+      "<h1> で名前を見出しにします。",
+      "趣味などを <p> で書きましょう。"
+    ],
+    "testCriteria": [
+      "h1タグを含む",
+      "段落タグpを含む"
+    ]
+  },
+  {
+    "id": "ex02",
+    "title": "リンク集",
+    "difficulty": "初級",
+    "description": "3つ以上のリンクを含むページを作成してください。",
+    "starterCode": "<body>\n  <h1>お気に入りサイト</h1>\n  \n</body>",
+    "solution": "<body>\n  <h1>お気に入りサイト</h1>\n  <a href=\"https://example.com\">Example</a>\n  <a href=\"https://google.com\">Google</a>\n  <a href=\"https://wikipedia.org\">Wikipedia</a>\n</body>",
+    "hints": [
+      "<a href=\"URL\"> でリンクを作ります。"
+    ],
+    "testCriteria": [
+      "リンクaタグを含む",
+      "href属性を含む"
+    ]
+  },
+  {
+    "id": "ex03",
+    "title": "買い物リスト",
+    "difficulty": "初級",
+    "description": "順序なしリストで買い物リストを作成してください。",
+    "starterCode": "<body>\n  <h1>買い物リスト</h1>\n  \n</body>",
+    "solution": "<body>\n  <h1>買い物リスト</h1>\n  <ul>\n    <li>牛乳</li>\n    <li>パン</li>\n    <li>卵</li>\n  </ul>\n</body>",
+    "hints": [
+      "<ul> と <li> を使います。"
+    ],
+    "testCriteria": [
+      "リストulを含む"
+    ]
+  },
+  {
+    "id": "ex04",
+    "title": "時間割表",
+    "difficulty": "中級",
+    "description": "table を使った時間割を作成してください。",
+    "starterCode": "<body>\n  <h1>時間割</h1>\n  \n</body>",
+    "solution": "<body>\n  <h1>時間割</h1>\n  <table>\n    <tr><th>時限</th><th>月</th><th>火</th></tr>\n    <tr><td>1</td><td>数学</td><td>英語</td></tr>\n    <tr><td>2</td><td>国語</td><td>理科</td></tr>\n  </table>\n</body>",
+    "hints": [
+      "<table>、<tr>、<th>、<td> を使います。"
+    ],
+    "testCriteria": [
+      "表tableを含む"
+    ]
+  },
+  {
+    "id": "ex05",
+    "title": "お問い合わせフォーム",
+    "difficulty": "中級",
+    "description": "名前とメールアドレスの入力欄を含むフォームを作成してください。",
+    "starterCode": "<body>\n  <h1>お問い合わせ</h1>\n  \n</body>",
+    "solution": "<body>\n  <h1>お問い合わせ</h1>\n  <form>\n    <label for=\"name\">名前:</label>\n    <input type=\"text\" id=\"name\">\n    <label for=\"email\">メール:</label>\n    <input type=\"email\" id=\"email\">\n    <button type=\"submit\">送信</button>\n  </form>\n</body>",
+    "hints": [
+      "<form> で囲みます。",
+      "<label> と <input> を使います。"
+    ],
+    "testCriteria": [
+      "フォームformを含む"
+    ]
+  },
+  {
+    "id": "ex06",
+    "title": "ブログ記事",
+    "difficulty": "中級",
+    "description": "セマンティックタグを使ったブログ記事ページを作成してください。",
+    "starterCode": "<body>\n  \n</body>",
+    "solution": "<body>\n  <header><h1>マイブログ</h1></header>\n  <main>\n    <article>\n      <h2>記事タイトル</h2>\n      <p>記事の本文です。</p>\n    </article>\n  </main>\n  <footer><p>Copyright 2026</p></footer>\n</body>",
+    "hints": [
+      "header、main、article、footer を使います。"
+    ],
+    "testCriteria": [
+      "セマンティックHTMLを含む"
+    ]
+  },
+  {
+    "id": "ex07",
+    "title": "アクセシブルなギャラリー",
+    "difficulty": "上級",
+    "description": "alt属性付きの画像ギャラリーページを作成してください。",
+    "starterCode": "<body>\n  <h1>写真ギャラリー</h1>\n  \n</body>",
+    "solution": "<body>\n  <h1>写真ギャラリー</h1>\n  <img src=\"photo1.jpg\" alt=\"桜の写真\">\n  <img src=\"photo2.jpg\" alt=\"海の写真\">\n  <img src=\"photo3.jpg\" alt=\"山の写真\">\n</body>",
+    "hints": [
+      "各 img に alt を付けます。"
+    ],
+    "testCriteria": [
+      "画像imgを含む",
+      "alt属性を含む"
+    ]
+  },
+  {
+    "id": "ex08",
+    "title": "レスポンシブLP",
+    "difficulty": "上級",
+    "description": "viewport設定付きのランディングページを作成してください。",
+    "starterCode": "<!DOCTYPE html>\n<html lang=\"ja\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>LP</title>\n</head>\n<body>\n  <h1>サービス紹介</h1>\n  <p>詳細はこちら</p>\n</body>\n</html>",
+    "solution": "<!DOCTYPE html>\n<html lang=\"ja\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>LP</title>\n</head>\n<body>\n  <h1>サービス紹介</h1>\n  <p>詳細はこちら</p>\n</body>\n</html>",
+    "hints": [
+      "viewport meta タグを追加します。"
+    ],
+    "testCriteria": [
+      "viewportを含む",
+      "lang属性を含む"
+    ]
+  }
+]

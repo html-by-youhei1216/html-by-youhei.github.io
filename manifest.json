@@ -1,0 +1,17 @@
+{
+  "name": "HTML Playground",
+  "short_name": "HTML Play",
+  "description": "HTMLを楽しく学べる日本語Webアプリ",
+  "start_url": "/app.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#2563eb",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
